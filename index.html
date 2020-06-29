@@ -1,0 +1,40 @@
+<script type="text/javascript">
+  
+  let aichoices = ['rock', 'paper', 'scissors'];
+
+function game(){
+
+    let playerchoices = prompt("yo",'');
+
+  function playerPlay()
+{
+  return playerchoices;
+}
+
+  function computerPlay()
+{
+  return aichoices[Math.floor(Math.random()*aichoices.length)];
+}
+
+function playRound(playerSelection, computerSelection) {
+// your code here!
+    return (playerSelection === 'rock' && computerSelection === 'rock') ? "rock rock nil1"
+       : (playerSelection === 'paper' && computerSelection === 'paper') ? "paper paper nil2"
+       : (playerSelection === 'scissors' && computerSelection === 'scissors') ? " sci sci nil3"
+       : (playerSelection === 'scissors' && computerSelection === 'rock') ? "sci rock You loose1"
+       : (playerSelection === 'rock' && computerSelection === 'paper') ? "rock paper You loose2"
+       : (playerSelection === 'paper' && computerSelection === 'scissors') ? "paper sci You loose3"
+         : (playerSelection === 'rock' && computerSelection === 'scissors') ? "rock sci You win1"
+       : (playerSelection === 'paper' && computerSelection === 'rock') ? "paper rock You win2"
+       : (playerSelection === 'scissors' && computerSelection === 'paper') ? "sci paper You win3"
+       : "GAME OVER";
+}
+let playerSelection = playerPlay();
+let computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
+}
+
+for(let i=0;i<5;i++){
+game()
+}
+</script>
