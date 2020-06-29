@@ -175,7 +175,7 @@ function playRound(playerSelection, computerSelection) {
         "tchè"
        }
 
-    return (playerSelection === 'rock' && computerSelection === 'rock') ? document.getElementById("resultat").innerHTML = "mierre contre pierre, kif kif"
+    return (playerSelection === 'rock' && computerSelection === 'rock') ? document.getElementById("resultat").innerHTML = "pierre contre pierre, kif kif"
        : (playerSelection === 'paper' && computerSelection === 'paper') ? document.getElementById("resultat").innerHTML = "papier contre papier, kif kif"
        : (playerSelection === 'scissors' && computerSelection === 'scissors') ? document.getElementById("resultat").innerHTML = "ciseaux contre ciseaux, kif kif"
        : (playerSelection === 'scissors' && computerSelection === 'rock') ? document.getElementById("resultat").innerHTML = "ciseaux contre pierre, perdu!"
